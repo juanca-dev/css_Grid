@@ -1,0 +1,26 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.element-1 {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+.element-2 {
+  grid-column: 1/2;
+}
+.element-3 {
+  grid-column: 2/4;
+}
+
+.grid > div {
+  background: #ecf0f1;
+  padding: 1em;
+}
+
+.grid > div:hover {
+  border: 1px solid #f1040f;
+}
